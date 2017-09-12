@@ -1,0 +1,57 @@
+.add-comment-form {
+	padding: 10px;
+
+  .field-wrap {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 74%;
+
+    label {
+      color: $is-emperor;
+      float: left;
+      font-weight: bold;
+      position: relative;
+      width: 24%;
+    }
+
+    .field-element-wrap {
+      float: left;
+      position: relative;
+      width: 70%;
+
+      textarea {
+        background: $is-white;
+				border: 1px dashed shade($is-linkwater, 10);
+        min-height: 60px;
+        width: 100%;
+      }
+    }
+  }
+
+  .button-holder {
+    clear: none;
+    float: left;
+    margin: 0;
+    padding: 1px;
+    position: relative;
+    width: 20%;
+  }
+
+  .notice {
+    color: $is-tundora;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+  }
+
+  .rp-button {
+    input[type="submit"] {
+      background: $is-blue;
+      border: 0;
+      margin: 0 10px 10px 10px;
+      padding: 10px 20px;
+    }
+  }
+
+}

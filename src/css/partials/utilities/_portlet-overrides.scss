@@ -1,0 +1,137 @@
+// This file contains styling which overrides the standard Liferay portlets
+// Things like styling the search engine results page, the blog etc.
+// --------
+
+
+// All portlets
+.portlet {
+
+	//margin: 0 0 15px 0;
+
+	// .portlet-topper {
+	//
+	// 	background: $is-blue;
+	// 	border: 1px solid $is-blue;
+	// 	@include border-radius(3px 3px 0 0);
+	// 	@include box-shadow(none);
+	// 	position: relative;
+	//
+	// 	.portlet-title {
+	// 		color: $is-white;
+	// 		float: none;
+	// 		font-size: 1.1em;
+	// 		font-weight: normal;
+	// 		margin: 0;
+	// 		padding: 4px 8px;
+	//
+	// 		img {
+	// 			display: none;
+	// 		}
+	// 	}
+	//
+	// 	.portlet-topper-toolbar {
+	// 		right: 6px;
+	// 		top: 6px;
+	// 	}
+	//
+	// }
+
+	.portlet-content {
+
+		background: $is-white;
+		border: 1px solid shade($is-linkwater, 10);
+		border-width: 0 1px 1px 1px;
+		@include border-radius(0 0 3px 3px);
+		@include box-shadow(none);
+		padding: $portlet-content-padding;
+		position: relative;
+
+		.portlet-body {
+			padding: $portlet-body-padding;
+		}
+	}
+
+
+}
+
+.portlet-borderless-container {
+  min-height: 0;
+}
+
+// Web Content Display and Asset Publisher
+.portlet-journal-content,
+.portlet-asset-publisher {
+
+	.portlet-content {
+		.portlet-body {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+}
+
+// Asset Publisher
+.portlet-asset-publisher {
+
+	.portlet {
+		.portlet-content {
+			.portlet-icon-back {
+				display: none;
+			}
+
+			.portlet-content-container {
+				.portlet-body {
+					> div {
+						> .h2 {
+							> span {
+								display: none;
+							}
+
+							.header-back-to {
+								display: block;
+							}
+
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.taglib-header {
+		display: none;
+	}
+
+	.asset-full-content {
+
+		.asset-content {
+			margin: 0;
+		}
+	}
+
+	.portlet-body {
+
+		.asset-user-actions {
+			@include clearfix();
+
+			margin-bottom: 3px;
+
+			div:first-child {
+				margin-left: 0;
+			}
+
+			div:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// Web Content Display
+.portlet-journal-content {
+	.portlet-borderless-container .journal-content-article {
+		margin-bottom: 15px;
+	}
+}

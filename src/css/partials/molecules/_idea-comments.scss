@@ -1,0 +1,145 @@
+.idea-comments {
+	margin: 10px 0;
+
+  > h2 {
+    border-bottom: 1px solid shade($is-linkwater, 10);
+    color: $is-boulder;
+    font-size: 1.2em;
+    margin: 0 0 15px 0;
+    padding: 0 0 2px 0;
+    text-transform: uppercase;
+  }
+
+  .comment {
+    background: $is-white;
+    border: 1px solid shade($is-linkwater, 10);
+    @include border-radius(3px);
+    margin: 10px 0;
+    padding: 15px;
+
+    &.comment-innovationsslussen {
+      background: $is-linkwater;
+      border: 1px solid shade($is-linkwater, 15);
+    }
+
+    .comment-author {
+      float: left;
+      font-size: 1.1em;
+      min-width: 150px;
+      position: relative;
+    }
+
+    .comment-author-name {
+      color: $is-emperor;
+      margin-bottom: 0.2em;
+      font-weight: bold;
+    }
+
+    .comment-author-title {
+      color: $is-emperor;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .comment-entry {
+      color: $is-tundora;
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      max-width: 500px;
+      position: relative;
+
+      .comment-entry-date {
+        margin-bottom: 0.4em;
+      }
+
+      .comment-entry-text {
+        line-height: 1.4;
+      }
+    }
+
+    .comment-controls {
+      float: right;
+      position: relative;
+
+      .comment-control {
+        background: transparent url(../images/common/tool.png) 0 0 no-repeat;
+        display: inline-block;
+        font-size: 0;
+        height: 16px;
+        text-indent: -9999em;
+        width: 16px;
+
+        .comment-control-delete {
+          background: transparent url(../images/common/close.png) 0 0 no-repeat;
+        }
+      }
+    }
+  }
+
+  .action-link {
+      background: $is-alto;
+      @include border-radius(4px);
+      color: $is-tundora;
+      display: block;
+      font-size: 1.3em;
+      padding: 10px;
+      text-align: center;
+      text-decoration: underline;
+  }
+}
+
+
+.ie7 {
+  .idea-comments {
+    .comment {
+      .comment-control {
+          display: block;
+          float: left;
+      }
+    }
+  }
+}
+
+.js {
+  .idea-comments {
+    .comment {
+      .requires-confirmation {
+        visibility: hidden;
+
+        &.requires-confirmation-active {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.ie7 {
+  .js {
+    .idea-comments {
+      .comment {
+        .requires-confirmation-active {
+            display: block;
+        }
+      }
+    }
+  }
+}
+
+
+.idea-outer-private {
+	.idea-comments {
+		.comment {
+
+			&.comment-innovationsslussen {
+				background: tint($is-red, 95);
+				border-color: $is-red;
+			}
+
+			.comment-author-name {
+				color: $is-emperor;
+			}
+		}
+	}
+}

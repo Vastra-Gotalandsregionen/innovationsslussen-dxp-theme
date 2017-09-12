@@ -1,0 +1,68 @@
+.top-wrap {
+
+  display: none;
+
+  @include small {
+    display: block;
+  }
+
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  ul.top-nav-list {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    padding: 0 5px;
+
+    li {
+      border-left: 1px solid $is-alto;
+      display: block;
+      float: left;
+      line-height: 1.0;
+      padding: 0;
+      margin: 0;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      a,
+      & > span {
+        color: $is-emperor;
+        display: block;
+        float: left;
+        font-size: 1.0em;
+        line-height: 21px;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+
+      & > span {
+        display: block;
+        margin: 0;
+        color: $is-boulder;
+      }
+
+      a {
+        color: $is-blue;
+
+        &:hover,
+        &:active {
+          background: $is-blue;
+          color: $is-white;
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

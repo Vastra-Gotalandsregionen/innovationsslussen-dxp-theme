@@ -1,0 +1,23 @@
+.portlet-barebone {
+
+  .portlet-topper,
+  .portlet-content {
+    border: none;
+  }
+
+  .portlet-title-text {
+    display: none;
+  }
+
+}
+
+.portlet-journal-content {
+  .portlet-content {
+    //padding: 0;
+
+    .portlet-body {
+      //padding: 0;
+    }
+
+  }
+}

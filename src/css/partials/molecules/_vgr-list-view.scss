@@ -1,0 +1,112 @@
+ul.vgr-list-view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    background: $is-linkwater;
+    border: 1px solid shade($is-linkwater, 10);
+    @include border-radius(3px);
+    margin: 7px 0;
+    padding: 10px;
+    position: relative;
+
+    &.vgr-list-view-item-odd {
+        background: $is-white;
+    }
+
+    .bd {
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    .bd:after {
+      content: "";
+      width: 100%;
+      height: 40px;
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, $is-linkwater 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, $is-linkwater 100%);
+      background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, $is-linkwater 100%);
+      background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, $is-linkwater 100%);
+      background: linear-gradient(top, rgba(255,255,255,0) 0%, $is-linkwater 100%);
+    }
+
+    &.vgr-list-view-item-odd .bd:after {
+      background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, $is-white 100%);
+      background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, $is-white 100%);
+      background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, $is-white 100%);
+      background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, $is-white 100%);
+      background: linear-gradient(top, rgba(255,255,255,0) 0%, $is-white 100%);
+    }
+
+    .hd,
+    .bd,
+    .ft {
+        margin: 5px 0;
+    }
+
+    .ft {
+        margin-bottom: 0;
+    }
+
+    .hd {
+      h3 {
+        float: left;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $is-blue;
+            text-decoration: none;
+
+            &:hover {
+              color: $is-blue;
+              text-decoration: underline;
+            }
+        }
+
+      }
+
+    }
+
+    .bd {
+
+      a {
+        color: $is-blue;
+        text-decoration: none;
+
+        &:hover {
+          color: $is-blue;
+          text-decoration: underline;
+        }
+
+      }
+
+    }
+
+
+  }
+
+  // Condensed view
+  &.vgr-list-view-condensed {
+    .vgr-list-view-item {
+      .hd {
+          h3 {
+            font-size: 1.1em;
+          }
+      }
+    }
+  }
+
+}
+
+// Base-level rules cannot contain the parent-selector-referencing character '&'.
+//&.ie7 li.vgr-list-view-item,
+//&.ie8 li.vgr-list-view-item {
+.ie7 li.vgr-list-view-item,
+.ie8 li.vgr-list-view-item {
+    zoom: 1;
+}

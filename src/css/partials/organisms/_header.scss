@@ -1,0 +1,78 @@
+#banner {
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  #heading {
+    background: $is-blue;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 0.5em;
+
+    .heading-inner {
+      padding: 1.3em 0;
+    }
+
+    @include small {
+      background: transparent;
+      margin: 0;
+      height: auto;
+      overflow: visible;
+
+      .heading-inner {
+        padding: 1.3em 0;
+        @include clearfix();
+      }
+    }
+
+
+
+    @include pie-clearfix();
+
+    .site-title {
+
+      display: inline-block;
+      height: 24px;
+      margin: 10px 0 0 10px;
+      overflow: hidden;
+      position: relative;
+      width: 237px;
+
+      a {
+        background: transparent url(../images/theme/logo/logo.png) 0 -47px no-repeat;
+        display: block;
+        font-size: 0;
+        height: 25px;
+        text-indent: -9999em;
+        width: 237px;
+      }
+
+      @include small {
+        display: block;
+        float: left;
+        margin: 0;
+        height: 41px;
+        width: 460px;
+
+        a {
+          background-position: 0 0;
+          height: 72px;
+          width: 460px;
+        }
+      }
+
+
+    }
+
+    .top-navigation {
+      float: right;
+      margin: 0;
+      position: relative;
+    }
+
+
+  }
+
+}

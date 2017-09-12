@@ -1,0 +1,62 @@
+ul.idea-flow-list {
+  background: transparent url(../images/theme/ideas/flow-line.png) left center repeat-x;
+  list-style: none;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+  padding: 0;
+
+  li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+
+    span {
+      background: $is-white;
+      border: 1px solid $is-red;
+      @include border-radius(12px);
+      color: $is-red;
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 24px;
+      text-align: center;
+      height: 24px;
+      width: 24px;
+    }
+
+    &.done {
+      span {
+        background: $is-red;
+        color: $is-white;
+      }
+    }
+
+  }
+
+}
+
+.idea-outer-private {
+
+  ul.idea-flow-list {
+    background-image: url(../images/theme/ideas/flow-line-private.png);
+
+    li {
+      span {
+        background: $is-white;
+        color: $is-red;
+        border-color: $is-red;
+      }
+
+      &.done {
+        span {
+          background: $is-red;
+          color: $is-white;
+        }
+      }
+    }
+
+  }
+
+}

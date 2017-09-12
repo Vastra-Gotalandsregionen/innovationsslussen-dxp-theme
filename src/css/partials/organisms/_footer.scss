@@ -1,0 +1,30 @@
+#footer {
+  border-top: 1px solid darken($is-linkwater, 10);
+  background: $is-linkwater;
+  bottom: 0;
+  height: 91px;
+  padding: 0;
+  width: 100%;
+
+  .footer-inner {
+    padding: 20px 0;
+
+    .logo {
+      background: url(../images/theme/logo/vgr-logo-large-transparent.png) no-repeat scroll 0 0 transparent;
+      display: block;
+      font-size: 0;
+      height: 51px;
+      margin: 0 auto;
+      text-align: center;
+      width: 252px;
+
+      span {
+        font-size: 0;
+        text-indent: -9999em;
+      }
+
+    }
+
+  }
+
+}

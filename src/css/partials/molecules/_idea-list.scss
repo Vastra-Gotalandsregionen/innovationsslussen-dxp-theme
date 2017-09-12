@@ -1,0 +1,242 @@
+.idea-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@include clearfix();
+
+  > li {
+		line-height: 1.1;
+    list-style: none;
+    margin: 0;
+    min-width: 230px;
+    padding: 0;
+    vertical-align: top;
+
+		width: 100%;
+
+		@include small {
+			display: block;
+			float: left;
+			width: 33.32%;
+		}
+
+    .idea-item {
+      margin: 0;
+      padding-bottom: 5%;
+			position: relative;
+
+			@include small {
+				margin-right: 5%;
+			}
+
+      a {
+        background: $is-blue;
+        border: 0;
+        @include border-radius(3px);
+        color: $is-emperor;
+        display: block;
+        margin: 0;
+        padding: 3px;
+        position: relative;
+        text-decoration: none;
+				@include transition(all 0.3s ease-in-out);
+
+        .idea-content {
+          background: $is-white;
+          @include border-radius(3px);
+          height: 120px;
+          overflow: hidden;
+          position: relative;
+
+          .idea-content-1,
+          .idea-content-2 {
+            background: $is-white;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            padding: 10px;
+            padding: 0;
+            width: 100%;
+            @include transition(all 0.3s ease-in-out);
+          }
+
+          .idea-content-1 {
+            filter: alpha(opacity=100);
+            opacity: 1;
+          }
+
+          .idea-content-2 {
+            //background: $is-linkwater;
+            filter: alpha(opacity=0);
+            opacity: 0;
+          }
+
+          .idea-content-inner {
+            padding: 6%;
+          }
+
+          h3 {
+            color: $is-emperor;
+            font-size: 1.1em;
+            margin: 0 0 10px 0;
+          }
+
+        }
+
+        &:hover {
+					background: darken($is-blue, 10);
+          color: $is-emperor;
+          text-decoration: none;
+
+          .idea-content {
+
+            .idea-content-1 {
+              filter: alpha(opacity=0);
+              opacity: 0;
+            }
+
+            .idea-content-2 {
+              filter: alpha(opacity=100);
+              opacity: 1;
+            }
+
+          }
+        }
+
+        .idea-label {
+          color: $is-white;
+          font-size: 0.9em;
+          font-weight: bold;
+          margin: 0;
+					padding: 5px;
+        }
+
+      }
+
+    }
+
+		&:nth-child(3n) {
+			.idea-item {
+				@include small {
+						margin-right: 0;
+				}
+			}
+		}
+
+
+
+    &.done {
+			a {
+				background: $is-green;
+
+				&:hover {
+					background: $is-green-dark;
+				}
+			}
+    }
+
+    &.active-innovationsslussen {
+			a {
+				background: $is-yellow;
+
+				&:hover {
+					background: darken($is-yellow, 10);
+				}
+			}
+    }
+
+
+    &.private a {
+			a {
+				background: $is-red;
+
+				&:hover {
+					background: $is-red-dark;
+				}
+			}
+    }
+
+
+  }
+
+  .idea-stats {
+    bottom: 6%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 6%;
+
+    li {
+      color: $is-boulder;
+      display: block;
+      float: left;
+      font-size: 12px;
+      font-weight: bold;
+      height: 20px;
+      line-height: 20px;
+      margin: 0 0 0 20px;
+      padding-left: 22px;
+      position: relative;
+      text-align: center;
+
+      &.likes,
+      &.comments,
+      &.open {
+        background: url(../images/theme/toolbar/idea-toolbar-icon-sprite-default.png) 0 0 no-repeat;
+      }
+
+      &.closed {
+          background: url(../images/theme/toolbar/idea-toolbar-icon-sprite-private.png) 0 0 no-repeat;
+      }
+
+      &.likes {
+        background-position: 0 -100px;
+      }
+
+      &.comments {
+        background-position: 0 3px;
+      }
+
+      &.open {
+        background-position: 0 -298px;
+      }
+
+      &.closed {
+        background-position: 0 -398px;
+      }
+
+    }
+
+  }
+
+  .idea-stats-state {
+      left: 6%;
+
+      li {
+        &.first {
+          margin-left: 0;
+          margin-right: 20px;
+
+        }
+      }
+  }
+
+}
+
+.ie7 {
+  .idea-list {
+    > li {
+      display: inline;
+      zoom: 1;
+
+      .idea-item {
+          margin-right: 15px;
+          padding-bottom: 15px;
+      }
+
+    }
+  }
+}

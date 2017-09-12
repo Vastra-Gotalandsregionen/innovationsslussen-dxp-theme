@@ -1,0 +1,37 @@
+.info-box {
+  background: $is-white;
+  border: 1px solid $is-linkwater;
+  @include border-radius(6px);
+  @include box-shadow(none);
+	margin: 0;
+	padding: 12px;
+	position: relative;
+
+  h1.title {
+    margin-top: 0;
+  }
+
+  h2.title {
+    font-size: 1.6em;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: $is-tundora;
+  }
+
+  img.image {
+    float: right;
+    padding: 0 0 5px 10px;
+  }
+
+  .link-wrap {
+    text-align: right;
+
+    a {
+      color: $is-blue;
+      text-decoration: none;
+    }
+  }
+
+}
