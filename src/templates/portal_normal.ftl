@@ -15,7 +15,9 @@
 	<#--
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/postscribe/2.0.8/postscribe.min.js"></script>
 	-->
+	<#--
 	<#include "${full_templates_path}/twitter.ftl" />
+	-->
 
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 	<link href="https://code.google.com/apis/maps/documentation/javascript/examples/standard.css" rel="stylesheet" type="text/css" />
@@ -130,6 +132,8 @@
 <script type="text/javascript" src="${javascript_folder}/jq.js"></script>
 
 <script src="//www.youtube.com/player_api"></script>
+
+<#include "${full_templates_path}/twitter.ftl" />
 
 <!-- inject:js -->
 <!-- endinject -->
