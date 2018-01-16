@@ -451,3 +451,13 @@ $navigationWidth: 320px;
   }
 
 }
+
+@include small {
+
+  .custom-admin-controls-open {
+      .navigation-wrapper.navigation-wrapper-scrolled {
+        position: relative;
+      }
+  }
+
+}

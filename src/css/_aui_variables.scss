@@ -1,3 +1,6 @@
+// Custom
+$is-blue: #327cb4;
+
 // Icon paths
 
 $FontAwesomePath: "aui/lexicon/fonts/alloy-font-awesome/font";
@@ -9,7 +12,7 @@ $portlet-decorate-border-width: 0;
 $wrapper-padding-bottom: 0;
 $wrapper-padding-top: 0;
 
-$brand-primary: #990ae3;
+$brand-primary: $is-blue;
 $brand-success: #0c6;
 $brand-info: #00CDFF;
 $brand-warning: #FF9B00;
