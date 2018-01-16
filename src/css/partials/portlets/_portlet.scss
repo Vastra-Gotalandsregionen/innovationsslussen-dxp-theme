@@ -11,6 +11,14 @@
 
 }
 
+.custom-admin-controls-open {
+  .portlet > .portlet-topper {
+    z-index: 9999;
+  }  
+}
+
+
+
 .portlet-journal-content {
   .portlet-content {
     //padding: 0;
