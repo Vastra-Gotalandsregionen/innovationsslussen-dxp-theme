@@ -1,5 +1,6 @@
 // Custom
 $is-blue: #327cb4;
+$is-blue-dark: darken($is-blue, 10);
 
 // Icon paths
 
@@ -31,7 +32,7 @@ $btn-default-hover-color: #fff;
 $btn-default-hover-bg: $brand-primary;
 $btn-default-active-color: #fff;
 $btn-default-active-bg: $brand-primary;
-$btn-primary-hover-bg: #c0f;
+$btn-primary-hover-bg: $is-blue-dark;
 $btn-success-hover-bg: #99ff64;
 $btn-info-hover-bg: #0ff;
 $btn-warning-hover-bg: #FFCD65;

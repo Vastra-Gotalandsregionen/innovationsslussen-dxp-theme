@@ -241,7 +241,7 @@ $navigationWidth: 320px;
             > a {
               > span {
                background: url(../images/theme/navigation/nav-home-icon.png) 50% 50% no-repeat;
-               padding-left: 30px;
+               padding: 10px 24px;
                font-size: 0;
                text-indent: -9999em;
               }
@@ -385,12 +385,22 @@ $navigationWidth: 320px;
             a {
               span {
                 padding: 16px 20px;
+                padding: 16px 10px;
 
                 &.nav-text {
                     min-height: 48px;
                 }
               }
             }
+
+            &:first-child {
+              > a {
+                > span {
+                 padding: 16px 24px;
+                }
+              }
+            }
+
 
             &.add-idea {
               a {
