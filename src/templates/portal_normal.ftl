@@ -131,6 +131,15 @@
 
 <script type="text/javascript" src="${javascript_folder}/jq.js"></script>
 
+<script type="text/javascript" src="${javascript_folder}/modules/innovationsslussen-banner-communicate-plugin.js"></script>
+<script type="text/javascript" src="${javascript_folder}/modules/innovationsslussen-signin-prompt.js"></script>
+<script type="text/javascript" src="${javascript_folder}/modules/innovationsslussen-signin-prompt-link-plugin.js"></script>
+<script type="text/javascript" src="${javascript_folder}/modules/rp-action-confirmation-plugin.js"></script>
+<script type="text/javascript" src="${javascript_folder}/modules/select-to-dropdown-plugin.js"></script>
+
+<script type="text/javascript" src="${javascript_folder}/modules/innovationsslussen-theme-2.js"></script>
+<script type="text/javascript" src="${javascript_folder}/theme-main.js"></script>
+
 <script src="//www.youtube.com/player_api"></script>
 
 <#include "${full_templates_path}/twitter.ftl" />
