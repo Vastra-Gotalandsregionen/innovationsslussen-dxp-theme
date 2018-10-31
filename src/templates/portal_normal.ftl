@@ -137,8 +137,6 @@
 
 <script src="//www.youtube.com/player_api"></script>
 
-<#include "${full_templates_path}/twitter.ftl" />
-
 <!-- inject:js -->
 <!-- endinject -->
 
