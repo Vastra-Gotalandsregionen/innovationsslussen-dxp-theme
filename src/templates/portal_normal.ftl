@@ -152,4 +152,6 @@
 
 </body>
 
+<#include "${full_templates_path}/piwik.ftl" />
+
 </html>

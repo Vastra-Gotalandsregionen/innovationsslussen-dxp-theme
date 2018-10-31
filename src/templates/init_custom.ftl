@@ -2,6 +2,13 @@
 This file allows you to override and define new FreeMarker variables.
 -->
 
+<#------ Define services ----------------------------------------------------------------------------------------------------------------->
+
+<#assign expandoValueLocalService = serviceLocator.findService("com.liferay.expando.kernel.service.ExpandoValueLocalService") />
+
+<#-- Piwik Code -->
+<#assign piwik_code = expandoValueLocalService.getData(company_id, "com.liferay.portal.kernel.model.Group", "CUSTOM_FIELDS", "piwikCode", group_id, "")  />
+
 <#------ Theme Settings ----------------------------------------------------------------------------------------------------------------->
 
 <#-- Breadcrumbs -->
