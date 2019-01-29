@@ -30,12 +30,6 @@ This file allows you to override and define new FreeMarker variables.
 	<#assign show_hero = false />
 </#if>
 
-<#------ Admin controls -------------------------------------------------->
-<#assign custom_show_admin_controls = sessionClicks.get(request, "custom_admin_controls", "custom-admin-controls-closed") />
-
-<#assign css_class = css_class + " " + custom_show_admin_controls />
-
-
 <#------ Macros -------------------------------------------------->
 
 <#-- Include Web Content Display portlet in theme. attribute: group_id is long, article_id is String-->

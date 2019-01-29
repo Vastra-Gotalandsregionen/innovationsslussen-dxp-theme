@@ -24,7 +24,7 @@
 				<#assign nav_item_name = nav_item.getName() />
 
 				<li ${nav_item_attr_selected} class="${nav_item_css_class}" id="${nav_item_id}" role="presentation">
-					<a aria-labelledby="${nav_item_id}}" ${nav_item_attr_has_popup} href="${nav_item_url}" ${nav_item_target} role="menuitem">
+					<a data-senna-off="true" aria-labelledby="${nav_item_id}}" ${nav_item_attr_has_popup} href="${nav_item_url}" ${nav_item_target} role="menuitem">
 						<span class="nav-text">
 							${nav_item_name}
 						</span>
@@ -46,7 +46,7 @@
 										<#assign nav_child_css_class = "selected" />
 									</#if>
 									<li class="${nav_child_css_class}" id="layout_${nav_child.getLayoutId()}" ${nav_child_attr_selected} role="presentation">
-										<a aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
+										<a data-senna-off="true" aria-labelledby="layout_${nav_child.getLayoutId()}" href="${nav_child.getURL()}" ${nav_child.getTarget()} role="menuitem">
 											<span>${nav_child.getName()}</span>
 										</a>
 									</li>

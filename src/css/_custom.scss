@@ -10,10 +10,17 @@
 // Vendor
 // ---------
 @import 'compass';
-@import 'compass/typography/vertical_rhythm';
+//@import 'compass/typography/vertical_rhythm';
+
+@import "font-awesome/scss/variables";
+@import "font-awesome/scss/mixins";
+@import "compass/css3/user-interface";
+@import "compat/third_party/font_awesome_alloy/scss/mixins-alloy";
 
 @import 'aui_variables';
 @import 'custom_variables';
+
+@import "bourbon";
 
 // Liferay
 @import "mixins";
@@ -21,7 +28,7 @@
 @include establish-baseline; //Uses variables $base-font-size & $base-line-height
 
 // Import font awesome since Liferay's version is old.
-@import 'partials/utilities/font-awesome';
+//@import 'partials/utilities/font-awesome';
 
 body {
 	font-weight: $base-font-weight;
@@ -95,6 +102,8 @@ body {
 @import 'partials/molecules/visible-interaction';
 @import 'partials/molecules/yammer-link';
 @import 'partials/molecules/youtube-portlet';
+@import 'partials/molecules/portlet_decorator';
+@import 'partials/molecules/topper';
 
 @import 'partials/molecules/owl-carousel';
 @import 'partials/molecules/owl-theme';

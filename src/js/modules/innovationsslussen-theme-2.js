@@ -103,18 +103,7 @@ AUI().add('innovationsslussen-theme-2',function(A) {
           }
       },
 
-      _fixDockbar: function() {
-          var instance = this;
-
-          var addButton = A.one('#_145_navAddControlsNavbarBtn');
-          var addListItems = A.all('#_145_navAddControls > li');
-
-          if(addListItems.size() == 0) {
-              addButton.hide();
-          }
-      },
-
-    	_handleIdeaListItemMouseEnter: function(e) {
+      _handleIdeaListItemMouseEnter: function(e) {
     		var instance = this;
 
 				var listItem = e.currentTarget;

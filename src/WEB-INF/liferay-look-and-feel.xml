@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
-<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.0.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_0_0.dtd">
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.1.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_1_0.dtd">
 
 <look-and-feel>
 	<compatibility>
-		<version>7.0.0+</version>
+		<version>7.1.0+</version>
 	</compatibility>
-	<theme id="innovationsslussen-dxp-theme" name="Innovationsslussen DXP Theme">
+	<theme id="innovationsslussen-2-theme" name="Innovationsslussen DXP Theme">
 		<template-extension>ftl</template-extension>
+
+		<settings>
+			<setting key="show-breadcrumbs" configurable="true" type="select" value="false" options="true,false" />
+			<setting key="show-hero" configurable="true" type="select" value="false" options="true,false" />
+		</settings>
+
 		<portlet-decorator id="barebone" name="Barebone">
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
@@ -17,12 +23,6 @@
 		<portlet-decorator id="decorate" name="Decorate">
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
-
-		<settings>
-			<setting key="show-breadcrumbs" configurable="true" type="select" value="false" options="true,false" />
-			<setting key="show-hero" configurable="true" type="select" value="false" options="true,false" />
-		</settings>
-
 
 	</theme>
 </look-and-feel>

@@ -1,4 +1,4 @@
-.btn-primary {
+.btn-primary, button.btn-primary.btn-default {
   background: transparent;
   border: 1px solid $is-blue;
   color: $is-blue;
@@ -11,9 +11,11 @@
   @include box-shadow(none);
   @include hover-fade-in();
 
-  &:hover {
+  &:hover, &:active, &:disabled {
     background: $is-blue;
+    background-color: $is-blue;
     color: $is-white;
     text-decoration: none;
   }
+
 }

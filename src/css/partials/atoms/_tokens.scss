@@ -1,5 +1,5 @@
 .lfr-token {
-	@include border-radius();
+	@include border-radius(3px);
 
 	background-color: $token-bg;
 	color: $token-color;

@@ -1,29 +1,39 @@
-//
+html {
+    height: 100%;
+}
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
-	background: $bg;
-	color: $text-color;
-	//font-family: Arial,Verdana,Helvetica,sans-serif;
-  //font-size: 14px;
-  font-family: Helvetica, Arial, sans-serif;
-	font-size: 16px;
-  line-height: $base-line-height;
-	margin: 0;
-	padding: 0;
+    background: $bg;
+    color: $text-color;
+    //font-family: Arial,Verdana,Helvetica,sans-serif;
+    //font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: $base-line-height;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 90px;
 
-  overflow-x: hidden; //needed to make edgetoedge work
+    overflow-x: hidden; //needed to make edgetoedge work
 
-	&.font-large {
-		font-size: 18px;
-	}
+    &.font-large {
+        font-size: 18px;
+    }
 
-	&.font-xlarge {
-		font-size: 20px;
-	}
+    &.font-xlarge {
+        font-size: 20px;
+    }
 
+    > #senna_surface1-default, senna_surface1-screen_2 {
+        min-height: 100%;
+        position: relative;
+        padding-bottom: 90px;
+    }
 }

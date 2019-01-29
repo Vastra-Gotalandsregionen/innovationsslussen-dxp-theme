@@ -1,9 +1,10 @@
 #footer {
   border-top: 1px solid darken(#005c95, 10);
   background: #005c95;
-  bottom: 0;
+  bottom: -90px;
   height: 91px;
   padding: 0;
+  position: absolute;
   width: 100%;
 
   .footer-inner {
