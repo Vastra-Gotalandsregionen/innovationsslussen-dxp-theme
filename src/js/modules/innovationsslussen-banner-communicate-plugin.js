@@ -1,3 +1,10 @@
+var v = document.getElementsByClassName('list-item-text');
+for (index in v) {
+	if (Number.isInteger(Number.parseInt(index)) && (v.item(index).innerText.indexOf('inkluderade') > -1)) {
+		v.item(index).parentNode.style.display = 'none';
+	}
+}
+
 AUI().add('innovationsslussen-banner-communicate-plugin',function(A) {
     var Lang = A.Lang,
         isNull = Lang.isNull,

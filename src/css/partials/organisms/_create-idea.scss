@@ -133,6 +133,10 @@
       min-height: 100px;
     }
 
+    textarea::placeholder {
+      font-size: .8em;
+    }
+
     .element-has-errors {
       .aui-field {
         input[type="text"],
