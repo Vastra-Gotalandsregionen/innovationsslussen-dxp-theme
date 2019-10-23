@@ -1,45 +1,45 @@
-@mixin set-portlet-topper-width($size: "sm", $i: 6) {
-	@if $size == "lg" {
-		$list: ".col-lg-#{$i}";
-
-		@for $i from (7) through $grid-columns {
-			$list: "#{$list}, .col-lg-#{$i}";
-		}
-	}
-
-	@else if $size == "md" {
-		$list: ".col-md-#{$i}";
-
-		@for $i from (7) through $grid-columns {
-			$list: "#{$list}, .col-md-#{$i}";
-		}
-	}
-
-	@else {
-		$list: ".col-xs-#{$i}, .col-sm-#{$i}";
-
-		@for $i from (7) through $grid-columns {
-			$list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}";
-		}
-	}
-
-	#{$list} {
-		.portlet-topper {
-			width: 65%;
-		}
-	}
-}
-
+// @mixin set-portlet-topper-width($size: "sm", $i: 6) {
+// 	@if $size == "lg" {
+// 		$list: ".col-lg-#{$i}";
+//
+// 		@for $i from (7) through $grid-columns {
+// 			$list: "#{$list}, .col-lg-#{$i}";
+// 		}
+// 	}
+//
+// 	@else if $size == "md" {
+// 		$list: ".col-md-#{$i}";
+//
+// 		@for $i from (7) through $grid-columns {
+// 			$list: "#{$list}, .col-md-#{$i}";
+// 		}
+// 	}
+//
+// 	@else {
+// 		$list: ".col-xs-#{$i}, .col-sm-#{$i}";
+//
+// 		@for $i from (7) through $grid-columns {
+// 			$list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}";
+// 		}
+// 	}
+//
+// 	#{$list} {
+// 		.portlet-topper {
+// 			width: 65%;
+// 		}
+// 	}
+// }
+//
 @include media-query(sm) {
-	@include set-portlet-topper-width();
+	// @include set-portlet-topper-width();
 }
 
 @include media-query(md) {
-	@include set-portlet-topper-width("md");
+	// @include set-portlet-topper-width("md");
 }
 
 @include media-query(lg) {
-	@include set-portlet-topper-width("lg");
+	// @include set-portlet-topper-width("lg");
 }
 
 .portlet {
